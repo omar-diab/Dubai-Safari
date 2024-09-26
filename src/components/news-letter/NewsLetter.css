@@ -1,0 +1,94 @@
+.news-letter {
+    margin: 20px 0;
+}
+
+.news-letter-container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 500px;
+    background-color: #d1f6e2;
+}
+
+.news-letter-image-wrapper {
+    width: 50%;
+}
+
+.news-letter-image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+} 
+
+.news-letter-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.news-letter-title {
+    color: var(--orange-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.news-letter-desc {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+    color: gray;
+}
+
+.news-letter-form {
+    margin-top: 15px;
+}
+
+.news-letter-input {
+    width: 100%;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 21px;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    color: var(--orange-color);
+}
+
+.news-letter-btn {
+    background-color: var(--orange-color);
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.news-letter-btn:hover {
+    background-color: #b13a12;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+    .news-letter-image-wrapper {
+        display: none;
+    }
+
+    .news-letter-content {
+        width: 100%;
+    }
+
+    .news-letter-title {
+        font-size: 30px;
+    }
+}

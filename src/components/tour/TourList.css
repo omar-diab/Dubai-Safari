@@ -1,0 +1,135 @@
+.tour-section {
+    background-color: seashell;
+    padding: 40px;
+}
+
+.tour-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    width: 30%;
+    margin: 25px 10px;
+    border-radius: 7px;
+    background-color: white;
+    position: relative;
+}
+
+.tour-item:hover {
+    background-color: snow;
+    box-shadow: 0 0 5px gray;
+}
+
+.tour-img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover;
+    display: flex;
+    border-radius: 7px 7px 0 0;
+}
+
+.tour-body {
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tour-title {
+    font-weight: bold;
+    font-size: 24px !important; 
+    color: var(--orange-color);
+}
+
+.tour-duration {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.tour-price {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    color: gray;
+}
+
+.tour-price strong {
+    color: red;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.tour-link {
+    font-size: 21px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--orange-color);
+    text-align: start;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tour-link:hover {
+    color: #b13a12;
+    text-decoration: underline;
+}
+
+/* Rating */
+
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rating {
+    font-size: 30px;
+    margin: 0 5px;
+    color: rgb(255, 218, 9);
+}
+
+/* Reviews */
+
+.reviews {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reviews p:first-child {
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 24px;
+    color: var(--orange-color);
+}
+
+.reviews p:last-child {
+    font-weight: 500;
+    font-size: 15px;
+    color: gray;
+}
+
+/* Media Queries */
+@media(max-width: 970px) {
+    .tour-item {
+        width: 47%;
+    }
+}
+@media(max-width: 768px) {
+    .tour-item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,69 @@
+.services {
+    padding: 30px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.service-item {
+    position: relative;
+    height: 200px;
+    background-size: cover; 
+    border-radius: 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: var(--orange-color);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; 
+}
+
+.service-item:first-child {
+    background: url(../../../public/tours/dubai15.jpg) no-repeat center center;
+}
+
+.service-item:nth-child(2){
+    background: url(../../../public/tours/dubai16.jpg) no-repeat center center;
+}
+
+.service-item:nth-child(3){
+    background: url(../../../public/tours/dubai17.jpg) no-repeat center center;
+}
+
+.service-item:last-child{
+    background: url(../../../public/tours/dubai18.jpg) no-repeat center center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.service-text {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px; 
+    border-radius: 20px;
+    transition: bottom 0.3s ease; 
+}
+
+.service-item:hover .service-text {
+    bottom: 0px; 
+}
+
+.service-text span {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-text .icon {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 15px;
+}

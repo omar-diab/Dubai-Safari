@@ -1,0 +1,75 @@
+.sort-section {
+    background-color: seashell;
+    padding: 40px;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 21px 0 0;
+}
+
+.available-tours {
+    font-size: 20px;
+    color: gray;
+}
+
+.available-tours strong { 
+    font-size: 30px;
+    color: var(--orange-color);
+}
+
+.sorting-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorting-title {
+    margin-right: 10px;
+    font-size: 30px;
+    color: var(--orange-color);
+}
+
+.sort-container select {
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 21px;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.sort-container select:focus {
+    outline: none;
+}
+
+.sort-container select option {
+    padding: 15px;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .sort-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .available-tours {
+        margin-bottom: 15px;
+        padding-right: 5px;
+    }
+
+    .available-tours strong { 
+        font-size: 24px;
+    }
+    
+    .sorting-title {
+        font-size: 24px;
+    }
+
+}
